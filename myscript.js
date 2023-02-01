@@ -31,17 +31,17 @@ startGame.addEventListener("click", function () {
  *  @param {int} dimension   dimensioni griglia   *
  **************************************************/
 
-function generaGriglia(grid, dimension) {
+function generaGriglia(grid, gridDimension) {
   grid.innerHTML = "";
 
   //random number
   const whitelist = [];
-  for (let i = 0; i < dimension; i++) {
+  for (let i = 0; i < gridDimension; i++) {
     whitelist.push(i + 1);
   }
 
   // per 100 volte
-  for (let i = 0; i < dimension; i++) {
+  for (let i = 0; i < gridDimension; i++) {
     // prendo un indice random whitelist
     const randomWhitelistIndex = generateRandomNumber(0, whitelist.length - 1);
     const testoCella = whitelist[randomWhitelistIndex];
