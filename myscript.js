@@ -10,6 +10,7 @@
  *                                                *
  **************************************************/
 const startGame = document.getElementById("inizia");
+const startGameSelect = document.getElementById("iniziaSelect");
 
 /**************************************************
  *                                                *
@@ -22,6 +23,29 @@ startGame.addEventListener("click", function () {
   const gridDimension = 100;
   generaGriglia(gridEl, gridDimension);
 });
+
+// startGameSelect.change("click", function () {
+//     if(value == 1){
+//         startGameSelect.addEventListener("click", function () {
+//             const gridEl = document.getElementById("grid");
+//             const gridDimension = 100;
+//             generaGriglia(gridEl, gridDimension);
+//           });
+//     }else if(value == 2){
+//         startGameSelect.addEventListener("click", function () {
+//             const gridEl = document.getElementById("grid");
+//             const gridDimension = 81;
+//             generaGriglia(gridEl, gridDimension);
+//           });
+//         }
+//         else{
+//             startGameSelect.addEventListener("click", function () {
+//                 const gridEl = document.getElementById("grid");
+//                 const gridDimension = 49;
+//                 generaGriglia(gridEl, gridDimension);
+//               });
+//         }
+//     }
 
 /**************************************************
  *                                                *
